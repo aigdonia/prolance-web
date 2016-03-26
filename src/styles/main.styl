@@ -138,13 +138,26 @@ body
           background-color: darken(base_color, 10)
 
 #how
-  .how-content
-    width: 60%
-    margin: 100px auto
+  ol
+    span
+      font-size: 1.4rem
+
+.block-content
+  width: 60%
+  margin: 100px auto
   h2
     font-size: 3rem
     margin: 0 0 50px
     text-align: center
-  ol
+
+.features-wrapper
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  .feature
+    width: 28%
     span
-      font-size: 1.4rem
+      display: block
+      text-align: center
+      background-color: red
+      text-transform: capitalize
