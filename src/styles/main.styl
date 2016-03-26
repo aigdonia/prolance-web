@@ -1,0 +1,150 @@
+// variables!
+
+body_color = #000000
+body_selection = #7fbd42
+body_background = #ffffff
+
+indigo_color = #4b0082
+green_color = #007543
+yellow_color = #824b00
+
+h3_color = #ecf0f1
+
+base_color = green_color
+
+@import 'iconic-font.styl'
+@import 'base.styl'
+// @import 'animate.css/animate.css'
+
+body
+  font-family: 'Fira Sans'
+  font-size: 18px
+  color: body_color
+  background-color: body_background
+  margin: 0
+  padding: 0
+
+::selection
+  background-color: body_selection
+  color: body_color
+
+#header
+  // background-color: red
+  position: absolute
+  width: 100%
+
+  nav
+    ul
+      float: right
+      margin-right: 100px
+    li
+      display: inline-block
+      padding: 10px 15px 0
+      a
+        color: white
+        text-decoration: none
+        border-bottom: 1px solid transparent
+        transition: 0.1s border ease-in-out
+        &:hover
+          border-bottom: 1px solid white
+
+        &.cta
+          padding: 6px 15px
+          border: 1px solid white
+          border-radius: 5px
+          transition: 0.2s all ease-in-out
+          &:hover,
+          &.active
+            background-color: white
+            color: base_color
+
+
+
+#hero
+  // height: 60vh
+  background-color: lighten(base_color,10)
+  padding: 70px 0 100px
+
+  .hero-content
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-items: center
+
+    .hero-message
+      display: flex
+      flex-flow: row
+      justify-content: space-between
+      align-items: center
+      margin: 0 auto
+
+    .message-wrapper
+      color: white
+      width: 40vw
+      h2, h3
+        margin: 0
+        text-align: right
+      h2
+        font-size: 70px
+        font-weight: 300
+      h3
+        padding-left: 8px
+        font-size: 28px
+        font-weight: 400
+
+
+  .logo
+    color: white
+    display: inline-block
+    margin: 0 auto
+    margin-top: 10px
+    span.icon-prolance
+      font-size: 180px
+
+  .beta-signup
+    width: 60vw
+    margin: 0 auto
+    padding: 0
+
+    p
+      color: white
+      font-size: 1.4rem
+      text-align: center
+      font-weight: 300
+
+    form
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      input
+        font-size: 20px
+        width: 70%
+        height: 40px
+        padding: 5px 12px
+        display: block
+        border: 1px solid transparent
+
+      button
+        height: 54px
+        border: none
+        font-size:18px
+        display: block
+        padding: 2px 14px 0
+        color: white
+        background-color: base_color
+        transition: 0.1s background-color ease-in-out
+
+        &:hover
+          background-color: darken(base_color, 10)
+
+#how
+  .how-content
+    width: 60%
+    margin: 100px auto
+  h2
+    font-size: 3rem
+    margin: 0 0 50px
+    text-align: center
+  ol
+    span
+      font-size: 1.4rem

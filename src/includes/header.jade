@@ -1,0 +1,10 @@
+mixin header_link(href,title)
+  li
+    a(href=href)&attributes(attributes)= title
+    
+#header
+  nav
+    ul
+      +header_link('#how-works', 'HOW ?!')
+      +header_link('#feature', 'Features')
+      +header_link('/login.html', 'Login')(class='cta')
