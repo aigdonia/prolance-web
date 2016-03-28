@@ -138,16 +138,18 @@ body
           background-color: darken(base_color, 10)
 
 #how
+  margin: 0px 0 100px
   ol
     span
       font-size: 1.4rem
 
 .block-content
   width: 60%
-  margin: 100px auto
+  margin: 0px auto 100px
   h2
     font-size: 3rem
-    margin: 0 0 50px
+    margin: 0px 0 50px
+    padding: 100px 0 50px
     text-align: center
 
 .features-wrapper
@@ -159,5 +161,24 @@ body
     span
       display: block
       text-align: center
-      background-color: red
       text-transform: capitalize
+      font-size: 1.6rem
+      margin-top: 7px
+
+    [class^="icon-"]
+      display: block
+      text-align: center
+      font-size: 4rem
+      transition: 0.1s all ease-in-out
+
+    &:hover
+      [class^="icon-"]
+        transform: scale(1.1) rotate(-10deg)
+      .icon-hourglass
+        transform: scale(1) translate(0, -20px) rotate(-180deg)
+      .icon-cubes
+        color: indigo_color
+
+    p
+      text-align: justify
+      font-size: 1.3rem

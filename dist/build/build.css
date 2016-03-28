@@ -218,16 +218,20 @@ body {
 #hero .beta-signup form button:hover {
   background-color: #004226;
 }
+#how {
+  margin: 0px 0 100px;
+}
 #how ol span {
   font-size: 1.4rem;
 }
 .block-content {
   width: 60%;
-  margin: 100px auto;
+  margin: 0px auto 100px;
 }
 .block-content h2 {
   font-size: 3rem;
-  margin: 0 0 50px;
+  margin: 0px 0 50px;
+  padding: 100px 0 50px;
   text-align: center;
 }
 .features-wrapper {
@@ -250,6 +254,29 @@ body {
 .features-wrapper .feature span {
   display: block;
   text-align: center;
-  background-color: #f00;
   text-transform: capitalize;
+  font-size: 1.6rem;
+  margin-top: 7px;
+}
+.features-wrapper .feature [class^="icon-"] {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  -webkit-transition: 0.1s all ease-in-out;
+          transition: 0.1s all ease-in-out;
+}
+.features-wrapper .feature:hover [class^="icon-"] {
+  -webkit-transform: scale(1.1) rotate(-10deg);
+          transform: scale(1.1) rotate(-10deg);
+}
+.features-wrapper .feature:hover .icon-hourglass {
+  -webkit-transform: scale(1) translate(0, -20px) rotate(-180deg);
+          transform: scale(1) translate(0, -20px) rotate(-180deg);
+}
+.features-wrapper .feature:hover .icon-cubes {
+  color: #4b0082;
+}
+.features-wrapper .feature p {
+  text-align: justify;
+  font-size: 1.3rem;
 }
